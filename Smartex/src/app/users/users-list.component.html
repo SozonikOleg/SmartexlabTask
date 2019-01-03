@@ -1,0 +1,72 @@
+
+
+<table border="1" class="table-name">
+  <tr>
+    <td>Name:</td>
+    <td *ngFor="let user of users" class="name"(click)="onOpenPopUp(user.id)">{{user.name}}</td>
+  </tr>
+</table>
+
+<table border="1" class="table-users">
+  <caption class="table-users-name">Information users</caption>
+  <tr>
+      <td>id</td>
+      <td *ngFor="let user of users" class="id">{{user.id}}</td>
+  </tr>
+  <tr>
+      <td>name</td>
+      <td *ngFor="let user of users">{{user.name}}</td>
+  </tr>
+  <tr>
+      <td>username</td>
+      <td *ngFor="let user of users">{{user.username}}</td>
+  </tr>
+  <tr>
+      <td>email</td>
+      <td *ngFor="let user of users">{{user.email}}</td>
+  </tr>
+  <tr>
+      <td>street</td>
+      <td *ngFor="let user of users">{{user.address.street}}</td>
+  </tr>
+  <tr>
+      <td>suite</td>
+      <td *ngFor="let user of users">{{user.address.suite}}</td>
+  </tr>
+  <tr>
+      <td>city</td>
+      <td *ngFor="let user of users">{{user.address.city}}</td>
+  </tr>
+  <tr>
+      <td>zipcode</td>
+      <td *ngFor="let user of users">{{user.address.zipcode}}</td>
+  </tr>
+  <tr>
+      <td>lat</td>
+      <td *ngFor="let user of users">{{user.address.geo.lat}}</td>
+  </tr>
+  <tr>
+      <td>ing</td>
+      <td *ngFor="let user of users">{{user.address.geo.lng}}</td>
+  </tr>
+  <tr>
+      <td>phone</td>
+      <td *ngFor="let user of users">{{user.phone}}</td>
+  </tr>
+  <tr>
+      <td>website</td>
+      <td *ngFor="let user of users">{{user.website}}</td>
+  </tr>
+  <tr>
+      <td>company name</td>
+      <td *ngFor="let user of users">{{user.company.name}}</td>
+  </tr>
+  <tr>
+      <td>company catchPhrase</td>
+      <td *ngFor="let user of users">{{user.company.catchPhrase}}</td>
+  </tr>
+  <tr>
+      <td>username</td>
+      <td *ngFor="let user of users">{{user.company.bs}}</td>
+  </tr>
+</table>

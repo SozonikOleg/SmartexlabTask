@@ -1,0 +1,54 @@
+/* style table */
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+.table-users-name {
+  font-size: 30px;
+  color: #9fa6c0;
+}
+.table-users {
+  margin-top: 40px;
+  font-size: 14px;
+  background: white;
+  border-collapse: collapse;
+  border: 0px solid #e8edff;
+  text-align: center;
+}
+
+.table-name {
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 18px;
+  background: white;
+  border-collapse: collapse;
+  border: 0px solid #e8edff;
+  text-align: center;
+}
+
+.table-name td{
+  margin: 0 auto;
+  padding: 10px;
+  color: #669;
+}
+
+.table-name td:hover {
+  background: #e8edff;
+}
+
+.table-users td {
+  color: #669;
+  padding: 9px 8px;
+  transition: .3s linear;
+  border-bottom: 1px solid #e8edff;
+}
+
+.table-users tr:hover td {
+  background: #e8edff;
+}
+
+.id {
+  font-weight: bold;
+}
+
+
